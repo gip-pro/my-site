@@ -1,118 +1,114 @@
-import Image from "next/image";
+import Image from "next/image"
 
 export default function Home() {
     return (
-        <main className="bg-white text-gray-900">
+        <main className="max-w-3xl mx-auto px-6 py-16 text-gray-900">
 
-            {/* HERO */}
-            <section className="min-h-screen flex flex-col justify-center items-center text-center px-6">
+            {/* HEADER */}
+            <section className="flex items-center gap-6 mb-12">
 
                 <Image
-                    src="/photo.jpg"
-                    width={160}
-                    height={160}
+                    src="/avatar.jpg"
+                    width={80}
+                    height={80}
                     alt="Igor Pronkin"
-                    className="rounded-full mb-6"
+                    className="rounded-full"
                 />
 
-                <h1 className="text-5xl font-bold mb-4">
-                    Игорь Пронькин
-                </h1>
+                <div>
+                    <h1 className="text-3xl font-bold">
+                        Igor Pronkin
+                    </h1>
 
-                <p className="text-xl max-w-2xl mb-8">
-                    Инженер-проектировщик. Разработка проектов организации строительства (ПОС)
-                    и проектов производства работ (ППР). Более 11 лет опыта в строительном
-                    планировании и инженерной документации.
-                </p>
-
-            </section>
-
-
-            {/* ABOUT */}
-            <section className="py-24 px-6 max-w-4xl mx-auto">
-
-                <h2 className="text-3xl font-bold mb-6">
-                    Обо мне
-                </h2>
-
-                <p className="text-lg leading-relaxed">
-                    Construction Project Engineer с опытом более 11 лет в разработке
-                    организационно-технологической документации для строительных
-                    и инфраструктурных проектов. Специализация — разработка ПОС,
-                    ППР, подготовка графиков строительства, координация инженерных
-                    команд и обеспечение соответствия проектной документации
-                    строительным нормативам.
-                </p>
-
-            </section>
-
-
-            {/* SERVICES */}
-            <section className="py-24 px-6 bg-gray-50">
-
-                <h2 className="text-3xl font-bold text-center mb-16">
-                    Услуги
-                </h2>
-
-                <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-                    <div className="border p-6 rounded-xl">
-                        <h3 className="text-xl font-semibold mb-2">
-                            Проект организации строительства
-                        </h3>
-                        <p>
-                            Разработка раздела ПОС для проектной документации
-                            в соответствии с требованиями нормативных документов.
-                        </p>
-                    </div>
-
-                    <div className="border p-6 rounded-xl">
-                        <h3 className="text-xl font-semibold mb-2">
-                            Проект производства работ
-                        </h3>
-                        <p>
-                            Подготовка ППР для строительных и монтажных работ,
-                            включая технологические решения и графики.
-                        </p>
-                    </div>
-
-                    <div className="border p-6 rounded-xl">
-                        <h3 className="text-xl font-semibold mb-2">
-                            Исполнительная документация
-                        </h3>
-                        <p>
-                            Подготовка исполнительных схем, актов и комплектов
-                            технической документации.
-                        </p>
-                    </div>
-
+                    <p className="text-gray-600">
+                        Construction Planning Engineer (POS / PPR)
+                    </p>
                 </div>
 
             </section>
 
 
-            {/* SKILLS */}
-            <section className="py-24 px-6 max-w-5xl mx-auto">
+            {/* INTRO */}
+            <section className="mb-12 text-lg leading-relaxed">
 
-                <h2 className="text-3xl font-bold text-center mb-16">
-                    Навыки
+                <p>
+                    Construction Project Engineer with 11+ years of experience
+                    in construction planning, development of Construction Organization
+                    Projects (POS) and Work Execution Plans (PPR).
+                </p>
+
+            </section>
+
+
+            {/* LINKS */}
+            <section className="mb-16 space-y-3">
+
+                <a
+                    href="mailto:igor.g.pronkin@gmail.com"
+                    className="block underline"
+                >
+                    Email
+                </a>
+
+                <a
+                    href="https://proekt-ppr.ru"
+                    className="block underline"
+                >
+                    Website
+                </a>
+
+                <a
+                    href="#projects"
+                    className="block underline"
+                >
+                    Projects
+                </a>
+
+            </section>
+
+
+            {/* PROJECTS */}
+            <section id="projects">
+
+                <h2 className="text-2xl font-semibold mb-6">
+                    Projects
                 </h2>
 
-                <div className="grid md:grid-cols-2 gap-8 text-lg">
+                <div className="space-y-6">
 
-                    <ul className="space-y-3">
-                        <li>Construction Planning (POS / PPR)</li>
-                        <li>Construction Scheduling</li>
-                        <li>Engineering Documentation</li>
-                        <li>Project Coordination</li>
-                    </ul>
+                    <div className="border rounded-lg p-6 hover:bg-gray-50">
+                        <h3 className="font-semibold text-lg">
+                            Construction Organization Project
+                        </h3>
 
-                    <ul className="space-y-3">
-                        <li>AutoCAD</li>
-                        <li>MS Office</li>
-                        <li>Adobe Acrobat</li>
-                        <li>Client Communication</li>
-                    </ul>
+                        <p className="text-gray-600">
+                            Development of POS documentation for infrastructure
+                            construction projects.
+                        </p>
+                    </div>
+
+
+                    <div className="border rounded-lg p-6 hover:bg-gray-50">
+                        <h3 className="font-semibold text-lg">
+                            Work Execution Plan (PPR)
+                        </h3>
+
+                        <p className="text-gray-600">
+                            Preparation of PPR for construction and installation works.
+                        </p>
+                    </div>
+
+
+                    <div className="border rounded-lg p-6 hover:bg-gray-50">
+                        <h3 className="font-semibold text-lg">
+                            Engineering Documentation
+                        </h3>
+
+                        <p className="text-gray-600">
+                            Preparation of engineering documentation and construction
+                            schedules.
+                        </p>
+                    </div>
 
                 </div>
 
@@ -120,44 +116,31 @@ export default function Home() {
 
 
             {/* EXPERIENCE */}
-            <section className="py-24 px-6 bg-gray-50">
+            <section className="mt-16">
 
-                <h2 className="text-3xl font-bold text-center mb-16">
-                    Опыт работы
+                <h2 className="text-2xl font-semibold mb-6">
+                    Experience
                 </h2>
 
-                <div className="max-w-4xl mx-auto space-y-8">
+                <div className="space-y-6">
 
                     <div>
-                        <h3 className="text-xl font-semibold">
-                            Индивидуальный предприниматель
-                        </h3>
-
-                        <p className="text-gray-600 mb-2">
-                            2018 – настоящее время
+                        <p className="font-semibold">
+                            Individual Entrepreneur
                         </p>
 
-                        <p>
-                            Разработка проектов организации строительства (ПОС),
-                            подготовка ППР, планирование строительных процессов
-                            и координация инженерных специалистов.
+                        <p className="text-gray-600">
+                            2018 — Present
                         </p>
                     </div>
 
-
                     <div>
-                        <h3 className="text-xl font-semibold">
-                            ООО «Трансэлектропроект»
-                        </h3>
-
-                        <p className="text-gray-600 mb-2">
-                            2014 – 2018
+                        <p className="font-semibold">
+                            Transelectroproject
                         </p>
 
-                        <p>
-                            Подготовка проектов организации строительства для
-                            инфраструктурных объектов и координация инженерных
-                            команд.
+                        <p className="text-gray-600">
+                            2014 — 2018
                         </p>
                     </div>
 
@@ -166,23 +149,13 @@ export default function Home() {
             </section>
 
 
-            {/* CONTACT */}
-            <section className="py-24 px-6 text-center bg-gray-900 text-white">
+            {/* FOOTER */}
+            <footer className="mt-20 text-gray-500 text-sm">
 
-                <h2 className="text-3xl font-bold mb-6">
-                    Контакты
-                </h2>
+                © 2026 Igor Pronkin
 
-                <p className="text-lg mb-2">
-                    Email: igor.g.pronkin@gmail.com
-                </p>
-
-                <p className="text-lg">
-                    proekt-ppr.ru
-                </p>
-
-            </section>
+            </footer>
 
         </main>
-    );
+    )
 }
