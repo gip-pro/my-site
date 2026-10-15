@@ -1,0 +1,22 @@
+/* Match the original div headings; the existing Tilda classes supply typography and spacing. */
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+#allrecords .service-detail-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: #239afc;
+    text-underline-offset: 0.18em;
+}
+
+#allrecords .service-detail-link:hover {
+    color: #147ac7;
+}
+
+#allrecords .service-detail-link:focus-visible {
+    outline: 2px solid #147ac7;
+    outline-offset: 4px;
+}
